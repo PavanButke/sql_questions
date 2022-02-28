@@ -1,57 +1,40 @@
-Q.1 Write a query to return the films with a rating of 'PG', 'G', or 'PG-13'
+Q.1 Write a query to list all the customers with an email address. Order the customers by last name descending
 
-Table(s) to use: film
-
-Expected Output:
-
-title                      |rating|
----------------------------|------|
-ACADEMY DINOSAUR           |PG    |
-ACE GOLDFINGER             |G     |
-AFFAIR PREJUDICE           |G     |
-AFRICAN EGG                |G     |
-AGENT TRUMAN               |PG    |
-AIRPLANE SIERRA            |PG-13 |
-ALABAMA DEVIL              |PG-13 |
-ALAMO VIDEOTAPE            |G     |
-
-
-Q.2 Write a query equivalent to the one below using BETWEEN.
-
-select title, length
-from film
-where length >= 90
-  and length <= 120;
-Table(s) to use: film
+Table(s) to use: customer
 
 Expected Output:
 
-title                 |length|
-----------------------|------|
-AFFAIR PREJUDICE      |   117|
-ALABAMA DEVIL         |   114|
-DATE SPEED            |   104|
-ALICE FANTASIA        |    94|
-AMADEUS HOLY          |   113|
-ANACONDA CONFESSIONS  |    92|
-ANTHEM LUKE           |    91|
-APACHE DIVINE         |    92|
+first_name |last_name   |
+-----------|------------|
+CYNTHIA    |YOUNG       |
+MARVIN     |YEE         |
+LUIS       |YANEZ       |
+BRIAN      |WYMAN       |
+BRENDA     |WRIGHT      |
+TYLER      |WREN        |
+FLORENCE   |WOODS       |
+LORI       |WOOD        |
 
 
-Q.3 Write a query to return all film titles that end with the word "GRAFFITI"
+Q.2 Write a query to list the country id's and cities from the city table, first ordered by country id ascending, then by city alphabetically.
 
-Table(s) to use: film
+Table(s) to use: city
 
 Expected Output:
 
-title             |
-------------------|
-CLUB GRAFFITI     |
-HUMAN GRAFFITI    |
-STRANGERS GRAFFITI|
-
-
-Q.4 you wrote a query to list the films that have a rating that is not 'G' or 'PG'. Re-write this query using NOT IN. Do your results include films with a NULL rating?
-
-Table(s) to use: film
-
+country_id|city                      |
+----------|--------------------------|
+         1|Kabul                     |
+         2|Batna                     |
+         2|Bchar                     |
+         2|Skikda                    |
+         3|Tafuna                    |
+         4|Benguela                  |
+         4|Namibe                    |
+         5|South Hill                |
+         6|Almirante Brown           |
+         6|Avellaneda                |
+         6|Baha Blanca               |
+         6|Crdoba                    |
+         6|Escobar                   |
+         6|Ezeiza                    |
