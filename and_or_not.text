@@ -49,3 +49,21 @@ from film
 where rating != 'G'
   or rating != 'PG';
 Table(s) to use: film
+
+
+Write a single query to show all rentals where the return date is greater than the rental date, or the return date is equal to the rental date, or the return date is less than the rental date. How many rows are returned? Why doesn't this match the number of rows in the table overall?
+
+Table(s) to use: rental
+
+Expected Output:
+
+rental_id|rental_date        |return_date        |
+---------|-------------------|-------------------|
+        2|2005-05-24 22:54:33|2005-05-28 19:40:33|
+        3|2005-05-24 23:03:39|2005-06-01 22:12:39|
+        4|2005-05-24 23:04:41|2005-06-03 01:43:41|
+        5|2005-05-24 23:05:21|2005-06-02 04:33:21|
+        6|2005-05-24 23:08:07|2005-05-27 01:32:07|
+        7|2005-05-24 23:11:53|2005-05-29 20:34:53|
+        8|2005-05-24 23:31:46|2005-05-27 23:33:46|
+        9|2005-05-25 00:00:40|2005-05-28 00:22:40|
