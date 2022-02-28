@@ -1,0 +1,52 @@
+Q.1 Write a query to obtain the length of each customer's first name (*remember to look for string functions in the documentation that can help*)
+
+Table(s) to use: customer
+
+Expected Output:
+
+first_name |length|
+-----------|------|
+MARY       |     4|
+PATRICIA   |     8|
+LINDA      |     5|
+BARBARA    |     7|
+ELIZABETH  |     9|
+JENNIFER   |     8|
+MARIA      |     5|
+SUSAN      |     5|
+
+
+
+Q.2 Write a query to return the initials for each customer
+
+Table(s) to use: customer
+
+Expected Output:
+
+first_name |last_name   |initial|
+-----------|------------|-------|
+MARY       |SMITH       |MS     |
+PATRICIA   |JOHNSON     |PJ     |
+LINDA      |WILLIAMS    |LW     |
+BARBARA    |JONES       |BJ     |
+ELIZABETH  |BROWN       |EB     |
+JENNIFER   |DAVIS       |JD     |
+MARIA      |MILLER      |MM     |
+SUSAN      |WILSON      |SW     |
+
+Q.3 Each film has a rental_rate, which is how much money it costs for a customer to rent out the film. Each film also has a replacement_cost, which is how much money the film costs to replace. Write a query to figure out how many times each film must be rented out to cover its replacement cost.
+
+Table(s) to use: film
+
+Expected Output:
+
+title                      |rental_rate|replacement_cost|# rentals to break-even|
+---------------------------|-----------|----------------|-----------------------|
+ACADEMY DINOSAUR           |       0.99|           20.99|                     22|
+ACE GOLDFINGER             |       4.99|           12.99|                      3|
+ADAPTATION HOLES           |       2.99|           18.99|                      7|
+AFFAIR PREJUDICE           |       2.99|           26.99|                     10|
+AFRICAN EGG                |       2.99|           22.99|                      8|
+AGENT TRUMAN               |       2.99|           17.99|                      7|
+AIRPLANE SIERRA            |       4.99|           28.99|                      6|
+AIRPORT POLLOCK            |       4.99|           15.99|                      4|
