@@ -69,3 +69,20 @@ rental_id|rental_date        |
         8|2005-05-24 23:31:46|
         9|2005-05-25 00:00:40|
 ...
+
+ou wrote a query to figure out how many times each film must be rented out to cover its replacement cost. Now write a query to return only those films that must be rented out more than 30 times to cover their replacement cost.
+
+Table(s) to use: film
+
+Expected Output:
+
+title                 |rental_rate|replacement_cost|# rentals to break-even|
+----------------------|-----------|----------------|-----------------------|
+ARABIA DOGMA          |       0.99|           29.99|                     31|
+BALLROOM MOCKINGBIRD  |       0.99|           29.99|                     31|
+BONNIE HOLOCAUST      |       0.99|           29.99|                     31|
+CLOCKWORK PARADISE    |       0.99|           29.99|                     31|
+CLYDE THEORY          |       0.99|           29.99|                     31|
+CRUELTY UNFORGIVEN    |       0.99|           29.99|                     31|
+EARTH VISION          |       0.99|           29.99|                     31|
+EVERYONE CRAFT        |       0.99|           29.99|                     31|
