@@ -36,3 +36,16 @@ ALTER VICTORY        |              6|    57|
 APOCALYPSE FLAMINGOS |              6|     0|
 BENEATH RUSH         |              6|    53|
 BLUES INSTINCT       |              5|    50|
+
+
+Q.3 Explain what each of the two queries below are doing and why they generate different results. Which one is probably a mistake and why?
+
+select title, rating
+from film
+where rating != 'G'
+  and rating != 'PG';
+select title, rating
+from film
+where rating != 'G'
+  or rating != 'PG';
+Table(s) to use: film
