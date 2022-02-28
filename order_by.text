@@ -1,0 +1,57 @@
+Q.1 Write a query to return the films with a rating of 'PG', 'G', or 'PG-13'
+
+Table(s) to use: film
+
+Expected Output:
+
+title                      |rating|
+---------------------------|------|
+ACADEMY DINOSAUR           |PG    |
+ACE GOLDFINGER             |G     |
+AFFAIR PREJUDICE           |G     |
+AFRICAN EGG                |G     |
+AGENT TRUMAN               |PG    |
+AIRPLANE SIERRA            |PG-13 |
+ALABAMA DEVIL              |PG-13 |
+ALAMO VIDEOTAPE            |G     |
+
+
+Q.2 Write a query equivalent to the one below using BETWEEN.
+
+select title, length
+from film
+where length >= 90
+  and length <= 120;
+Table(s) to use: film
+
+Expected Output:
+
+title                 |length|
+----------------------|------|
+AFFAIR PREJUDICE      |   117|
+ALABAMA DEVIL         |   114|
+DATE SPEED            |   104|
+ALICE FANTASIA        |    94|
+AMADEUS HOLY          |   113|
+ANACONDA CONFESSIONS  |    92|
+ANTHEM LUKE           |    91|
+APACHE DIVINE         |    92|
+
+
+Q.3 Write a query to return all film titles that end with the word "GRAFFITI"
+
+Table(s) to use: film
+
+Expected Output:
+
+title             |
+------------------|
+CLUB GRAFFITI     |
+HUMAN GRAFFITI    |
+STRANGERS GRAFFITI|
+
+
+Q.4 you wrote a query to list the films that have a rating that is not 'G' or 'PG'. Re-write this query using NOT IN. Do your results include films with a NULL rating?
+
+Table(s) to use: film
+
