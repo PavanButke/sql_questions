@@ -67,3 +67,39 @@ rental_id|rental_date        |return_date        |
         7|2005-05-24 23:11:53|2005-05-29 20:34:53|
         8|2005-05-24 23:31:46|2005-05-27 23:33:46|
         9|2005-05-25 00:00:40|2005-05-28 00:22:40|
+
+
+Q.4 Write a query to list the rentals that haven't been returned
+
+Table(s) to use: rental
+
+Expected Output:
+
+rental_id|return_date|
+---------|-----------|
+    11496|           |
+    11541|           |
+    12101|           |
+    11563|           |
+    11577|           |
+    11593|           |
+    11611|           |
+    11646|           |
+
+
+Q.5 Write a query to list the films that have a rating that is not 'G' or 'PG'
+
+Table(s) to use: film
+
+Expected Output:
+
+title                      |rating|
+---------------------------|------|
+ADAPTATION HOLES           |NC-17 |
+AIRPLANE SIERRA            |PG-13 |
+AIRPORT POLLOCK            |R     |
+ALABAMA DEVIL              |PG-13 |
+ALADDIN CALENDAR           |NC-17 |
+DATE SPEED                 |R     |
+ALICE FANTASIA             |NC-17 |
+ALIEN CENTER               |NC-17 |
