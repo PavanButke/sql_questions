@@ -1,0 +1,38 @@
+Q.1 Write a query to show all rentals made by the customer with ID 388 in 2005
+
+Table(s) to use: rental
+
+Expected Output:
+
+rental_id|rental_date        |
+---------|-------------------|
+       21|2005-05-25 01:59:46|
+      411|2005-05-27 14:14:14|
+     1276|2005-06-15 08:00:13|
+     2145|2005-06-17 22:10:36|
+     2537|2005-06-19 01:52:21|
+     2692|2005-06-19 13:08:19|
+     3159|2005-06-20 21:11:50|
+     4947|2005-07-08 22:49:37|
+
+
+
+Q.2 We’re trying to list all films with a length of an hour or less. Show two different ways to fix our query below that isn't working (one using the NOT keyword, and one without)
+
+select title, rental_duration, length
+from film
+where length not > 60;
+Table(s) to use: film
+
+Expected Output:
+
+title                |rental_duration|length|
+---------------------|---------------|------|
+ACE GOLDFINGER       |              3|    48|
+ADAPTATION HOLES     |              7|    50|
+AIRPORT POLLOCK      |              6|    54|
+ALIEN CENTER         |              5|    46|
+ALTER VICTORY        |              6|    57|
+APOCALYPSE FLAMINGOS |              6|     0|
+BENEATH RUSH         |              6|    53|
+BLUES INSTINCT       |              5|    50|
